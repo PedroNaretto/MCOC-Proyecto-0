@@ -36,8 +36,16 @@ for x in num64:
 
 for i in range(len(v32)-1):
     #Diferencia de exactitud entre calculos con 32 y 64 bits
-    diff.append(np.abs(v32[i]-v64[i]))
+    diff.append(np.abs((v32[i]-v64[i])/v64[i]))
     
-print "\nNumero utilizado, Calculo con 32 bits, Calculo con 64 bits, Diferencia de error"
-for i in range(len(v32)-1):
-    print num32[i],",",v32[i],",", v64[i],",", diff[i]
+print "Numeros utilizados"
+print num32
+print ""
+print "Calculos con 32 bits"
+print v32
+print ""
+print "Calculos con 64 bits"
+print v64
+print ""
+print "Error Relativo"
+print diff
