@@ -7,8 +7,8 @@ La perdida de significancia ocurre en problemas aritmeticos trabajados en comput
 En este caso veremos como en la funcion f(x)=(1-cos(x))/sen(x) se produce una perdida de significancia importante a medida que el valor de x se acerca a 0.
 
 Para observar este fenomeno se utilizo:
-1.- Solución con .float32
-2.- Solución con .float64
+ 1.- Solución con .float32
+ 2.- Solución con .float64
 
 # Resultados
 Se define el error relativo como
