@@ -17,12 +17,14 @@ num64 = np.delete(num64,0)
 v32 = []
 v64 = []
 diff = []
+numeros = []
 
 for x in num32:
    
     #Funcion calculada con 32 bits
     val32 = np.float32(((1 -np.cos(x))/np.sin(x)))
     v32.append(val32)
+    numeros.append(x)
     if len(v32) == 50:
         break
 
@@ -39,7 +41,7 @@ for i in range(len(v32)-1):
     diff.append(np.abs((v32[i]-v64[i])/v64[i]))
     
 print "Numeros utilizados"
-print num32
+print numeros
 print ""
 print "Calculos con 32 bits"
 print v32
